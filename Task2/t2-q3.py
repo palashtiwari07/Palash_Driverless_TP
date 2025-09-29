@@ -1,9 +1,10 @@
 def hash():
-    string=input("enter numbers sepereated by space: ")
+    n=int(input("enter the number of integers:"))
     numbers=[]
-    for i in string.split():
-        i=int(i)
-        numbers.append(i)
+    print("enter the integers:")
+    for i in range(n):
+        num=int(input())
+        numbers.append(num)
     hash_table=[]
     hash_table = [None]*10
     for row in range(10):
@@ -22,7 +23,7 @@ def hash():
 def binary_search(sublist, num):
     low=0
     high=len(sublist)-1
-    while low <= high:
+    while low < high:
         mid=(high+low)//2
         if sublist[mid] < num:
             low=mid+1

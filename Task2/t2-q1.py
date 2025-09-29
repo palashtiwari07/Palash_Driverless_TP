@@ -7,7 +7,7 @@ def matrix_multiplication():
         row = []  
         for j in range(cols_B):
             row.append(0)  
-        result.append(row)  
+        result.append(row) 
 
 
     for i in range(rows_A):
